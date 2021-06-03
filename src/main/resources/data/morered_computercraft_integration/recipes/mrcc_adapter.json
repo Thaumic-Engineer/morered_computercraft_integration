@@ -1,0 +1,21 @@
+{
+	"type": "morered:gatecrafting",
+	"ingredients": 
+	[
+		{
+			"type": "morered:tag_stack",
+			"tag": "forge:quarter_slabs/smooth_stone",
+			"count": 3
+		},
+		{
+			"tag": "forge:dusts/redstone"
+		},
+		{
+			"tag": "morered:bundled_network_cables"
+		}
+	],
+	"result": 
+	{
+		"item": "morered_computercraft_integration:mrcc_adapter"
+	}
+}

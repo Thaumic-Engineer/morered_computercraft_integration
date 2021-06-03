@@ -1,0 +1,68 @@
+{
+	"parent": "morered:block/plate_template",
+	"ambientocclusion": false,
+	"textures": {
+		"backplate_face": "computercraft:block/monitor_normal_0",
+		"backplate_overlay": "morered_computercraft_integration:block/backplate_overlay",
+		"cable": "morered:block/bundled_cable_plate_overlay",
+		"peripheral": "computercraft:block/wired_modem_face",
+		"particle": "block/smooth_stone",
+		"plate": "block/smooth_stone",
+		"cable_overlay": "morered_computercraft_integration:block/mrcc_adapter_overlay"
+	},
+	"elements": [
+		{
+			"name": "plate",
+			"from": [12, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 12, 16, 16], "rotation": 90, "texture": "#plate", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#plate", "cullface": "east"},
+				"south": {"uv": [0, 12, 16, 16], "rotation": 270, "texture": "#plate", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#plate"},
+				"up": {"uv": [0, 12, 16, 16], "rotation": 270, "texture": "#plate", "cullface": "up"},
+				"down": {"uv": [0, 12, 16, 16], "rotation": 270, "texture": "#plate", "cullface": "down"}
+			}
+		},
+		{
+			"name": "plate_overlay",
+			"from": [12, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 16, 0], "rotation": 270, "texture": "#cable_overlay", "cullface": "north"},
+				"west": {"uv": [0, 0, 16, 8], "rotation": 270, "texture": "#cable_overlay"}
+			}
+		},
+		{
+			"name": "backplate",
+			"from": [2, 2, 14],
+			"to": [12, 14, 16],
+			"faces": {
+				"north": {"uv": [2, 1, 14, 11], "rotation": 90, "texture": "#backplate_face"},
+				"south": {"uv": [2, 2, 14, 12], "rotation": 270, "texture": "#backplate_face", "cullface": "south"},
+				"west": {"uv": [3, 14, 13, 16], "rotation": 270, "texture": "#peripheral"},
+				"up": {"uv": [0, 3, 2, 13], "rotation": 270, "texture": "#peripheral"},
+				"down": {"uv": [14, 3, 16, 13], "rotation": 270, "texture": "#peripheral"}
+			}
+		},
+		{
+			"name": "backplate_overlay",
+			"from": [2, 2, 14],
+			"to": [12, 14, 16],
+			"faces": {
+				"south": {"uv": [2, 2, 14, 12], "rotation": 270, "texture": "#backplate_overlay", "cullface": "south"}
+			}
+		},
+		{
+			"name": "cable",
+			"from": [6, 5, 10],
+			"to": [12, 11, 14],
+			"faces": {
+				"north": {"uv": [5, 13, 11, 16], "rotation": 90, "texture": "#cable"},
+				"west": {"uv": [5, 0, 11, 4], "rotation": 270, "texture": "#cable"},
+				"up": {"uv": [9, 5, 5, 11], "rotation": 270, "texture": "#cable"},
+				"down": {"uv": [7, 5, 11, 11], "rotation": 90, "texture": "#cable"}
+			}
+		}
+	]
+}
